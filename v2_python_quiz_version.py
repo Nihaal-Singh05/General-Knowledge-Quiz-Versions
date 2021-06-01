@@ -25,7 +25,7 @@ knowing = input("Do you know how to play the quiz?: {}?: \na. Yes \nb. No \n=>".
 
 #What If The User Does Not Know How To Play
 if knowing == 'No' or knowing == 'no' or knowing == 'B' or knowing == 'b' or knowing == 'N' or knowing == 'n' :
-    print("This quiz will ask you questions about the subject of sports")
+    print("This quiz will ask you questions about the subject of general knowledge")
     print("There will be one correct answer per question. Each Question will have")
     print("four possible answers for each question.")
     print("You can answer the question by writing your chosen answer or the letter representing that answer.")
