@@ -1,6 +1,5 @@
-#this is a simple program based on asking user for their details 
+#this program is to ask the user for their details for the quiz
 #initial score
-
 
 score = 0
 #ask for name
