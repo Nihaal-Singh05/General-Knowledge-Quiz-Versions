@@ -1,0 +1,21 @@
+#this is a simple program based on asking user for their details 
+#initial score
+
+
+score = 0
+#ask for name
+def greet():
+    global name
+    while True:
+        name = input("Please enter your name : ")
+        if name.isalpha():
+            break
+        print("Please, enter letters only")
+greet()
+
+#ask for age
+while True:
+    age = input("Please enter your age : ")
+    if age.isnumeric():
+        break
+    print("Please, enter numbers only")
