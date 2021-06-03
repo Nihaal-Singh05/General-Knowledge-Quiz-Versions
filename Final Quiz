@@ -137,7 +137,6 @@ questions=[
 ]
 shuffle(questions)
 ## score mechanics
-print("Main Routine")
 while r>0:
     data = questions[0]
     q = data[0]
@@ -172,8 +171,8 @@ while r>0:
             break
         else:
             print("Please enter the alphabet for the chosen option")
+
+print("\nCongratulations on completing the General Knowledge Quiz {}!".format(name))
+print("Your final score is",score)
+print("Thank you for playing")
                    
-r=int(input())
-score=score/rounds
-percentage=score*100
-print(percentage)
