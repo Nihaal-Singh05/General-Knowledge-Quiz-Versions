@@ -12,17 +12,14 @@ def greet():
         if name.replace(' ','').isalpha():
             break
         print("Please only use letters to enter your name.")
-greet()#calling the greet function
+greet()
 
-
-
-#Ask for age
+#ask for age
 while True:
     age = input("Please enter your age : ")
     if age.replace(' ','').isnumeric():
         break
     print("Please only use numbers to enter your name.")
-
 
 
 #Ask if they are ready to take the quiz
