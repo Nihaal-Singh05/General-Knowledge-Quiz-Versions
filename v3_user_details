@@ -1,5 +1,6 @@
-#this program is to ask the user for their details for the quiz
+#this is a simple program based on asking user for their details 
 #initial score
+
 
 score = 0
 #ask for name
@@ -7,7 +8,7 @@ def greet():
     global name
     while True:
         name = input("Please enter your name : ")
-        if name.isalpha():
+        if name.replace(' ','').isalpha():
             break
         print("Please, enter letters only")
 greet()
@@ -15,6 +16,6 @@ greet()
 #ask for age
 while True:
     age = input("Please enter your age : ")
-    if age.isnumeric():
+    if age.replace(' ','').isnumeric():
         break
     print("Please, enter numbers only")
