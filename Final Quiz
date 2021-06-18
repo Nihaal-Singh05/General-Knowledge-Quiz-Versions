@@ -4,7 +4,7 @@ print("                 Welcome to this General Knowledge Quiz")
 print("-----------------------------------------------------------------")
 
 
-#Ask for name by using greet function
+#ask for name by using greet function
 def greet():
     global name
     while True:
@@ -18,8 +18,10 @@ greet()
 while True:
     age = input("Please enter your age : ")
     if age.replace(' ','').isnumeric():
-        break
-    print("Please only use numbers to enter your name.")
+        if 4< int(age)<105:
+           break
+        else:
+            print("Sorry, but you need to be between the ages of 5 and 104 to play this quiz")
 
 
 #Ask if they are ready to take the quiz
@@ -27,7 +29,7 @@ status = input("Are you ready to take the quiz :{}?: \na. Yes \nb. No \n=>".form
 
 
 #what if the user is ready
-if status == 'Yes' or status == 'yes' or status == 'Y' or status == 'y' or status == 'A' or status == 'a':
+if status == 'Yes' or status == 'yes' or status == 'Y' or status == 'y' or status == 'A' or status == 'a' or status == 'YES':  
     print("Welcome to the General Knowledge quiz.")
 else:
     print("Thank you trying this quiz ")
@@ -39,8 +41,8 @@ def inst():
     inst = input("If you wish to read the instructions for this quiz, please press y on your keyboard :{}?: \na. Yes \nb. No \n=>")
     if inst == 'Yes' or inst == 'yes' or inst == 'Y' or inst == 'y' or inst == 'A' or inst == 'a':
      
-        print("----------------------------------Instructions------------------------------------------")
-        print("This quiz will ask questions based on general knowledge")
+        print("----------------------------------Instructions------------------------------------------") #instruction of the quiz 
+        print("This quiz will ask questions based on general knowledge") 
         print("There will be four possible answers for every questions")
         print("However, there will only be one correct answer for each question.")
         print("----------------------------------------------------------------------------------------")
